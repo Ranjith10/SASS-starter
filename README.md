@@ -1,2 +1,2 @@
-# SASS-starter
+# react-zustand
 Created with CodeSandbox
