@@ -2,3 +2,21 @@
   font-family: sans-serif;
   text-align: center;
 }
+/* define variables for the primary colors */
+$primary: #a2b9bc;
+$secondary: #b2ad7f;
+
+/* use the variables */
+body {
+  background-color: $primary;
+}
+
+/*nesting of styles*/
+body {
+  .App {
+    color: purple;
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+    }
+  }
+}
