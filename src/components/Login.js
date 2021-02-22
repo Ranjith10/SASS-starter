@@ -12,6 +12,10 @@ const Login = () => {
         <label>Password:</label>
         <input />
       </div>
+      <div className="button-container">
+        <button className="cancel">Cancel</button>
+        <button className="submit">Login</button>
+      </div>
     </div>
   );
 };

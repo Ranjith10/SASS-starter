@@ -1,5 +1,18 @@
 @import '../variables.scss';
 
+.button-basic {
+  outline: none;
+  width: 75px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -19,6 +32,18 @@
     }
     input {
       outline: none;
+    }
+  }
+  .button-container {
+    margin: 20px 0 0 0;
+    .submit {
+      @extend .button-basic;
+      margin: 0 0 0 10px;
+      background-color: rgb(17, 182, 52);
+    }
+    .cancel {
+      @extend .button-basic;
+      background: rgb(224, 119, 101);
     }
   }
 }
