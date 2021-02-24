@@ -1,10 +1,10 @@
-#Created with CodeSandbox
+# Created with CodeSandbox
 
-##Steps to Add Sass
+## Steps to Add Sass
 
 <li>Install node-sass/sass
 <li>Renaming .css to .scss/.sass
 <li>Import the .scss/.sass File
 
-##Note
+## Note
 node-sass - deprecated

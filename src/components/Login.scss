@@ -1,10 +1,22 @@
 @import '../variables.scss';
 
+// Mixin 
+@mixin button-text-style {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  line-height: 26px;
+  color: #fff;
+}
+
+//Mixin with params
+@mixin bordered-button($color, $width) {
+  border: $width solid $color;
+}
+
 .button-basic {
   outline: none;
   width: 75px;
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,13 +49,17 @@
   .button-container {
     margin: 20px 0 0 0;
     .submit {
+      @include button-text-style;
       @extend .button-basic;
       margin: 0 0 0 10px;
       background-color: rgb(17, 182, 52);
+      @include bordered-button(black, 2px);
     }
     .cancel {
+      @include button-text-style;
       @extend .button-basic;
       background: rgb(224, 119, 101);
+      @include bordered-button(gray, 2px);
     }
   }
 }
